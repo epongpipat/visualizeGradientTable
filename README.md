@@ -2,7 +2,7 @@
 
 ---
 
-This package creates a 3D visualize of dMRI gradient tables (using bvals and bvecs)
+This package creates a 3D visualization of dMRI gradient tables (using bvals and bvecs)
 
 ## Install
 
@@ -20,6 +20,8 @@ devtools::install_github('epongpipat/visualizeGradientTable')
 library(visualizeGradientTable)
 visualize_gradient_table(in_bvals, in_bvecs, out_path)
 ```
+
+<object type="text/html" data="/Volumes/shared/software/scripts/eep170030/GitHub/visualizeGradientTable/example.html" width="100%" height="400px"></object>
 
 ## Command-line
 
