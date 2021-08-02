@@ -1,0 +1,10 @@
+#!/usr/local/bin/Rscript --vanilla
+
+library(argparse)
+parser <- ArgumentParser(description='Function to Visualize dMRI Gradient Table')
+parser$add_argument('--in_bvals', type = 'character', help='path to bvals file')
+parser$add_argument('--in_bvecs', type = 'character', help='path to bvecs file')
+parser$add_argument('--out_path', type = 'character', help='path to output html file')
+args <- parser$parse_args()
+
+visualizeGradientTable::visualize_gradient_table(opts$in_bvals, opts$in_bvecs, opts$out_path)
